@@ -10,7 +10,7 @@ const Hero = () => {
         <Spotlight className='-top-40 -left-10 md:-left-32 md:-top-20 h-screen' fill="white"/>
         <Spotlight className='-top-10 -left-full h-[80vh] w-[50vw] ' fill="purple"/>
         <Spotlight className='-top28 -left80 h-[80vh] w-[50vw]' fill="blue"/>
-        <Spotlight className='-top28 -left-40 h-[80vh] w-[50vw]' fill="red"/>
+        <Spotlight className='-top28 -left-40 h-[80vh] w-[50vw]' fill="white"/>
 
       </div>
       
@@ -31,7 +31,7 @@ const Hero = () => {
 
           <TextGenerateEffect 
             className='text-center text-[40px] md:text-5xl lg:text-6xl'
-            words="Hello world!, I'm Omin"
+            words="Hello world!, I'm Omin dhsh hghfdh fdhdrhdhd hd hdf hfdh d djdg jd"
             />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
