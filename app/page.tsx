@@ -1,5 +1,6 @@
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
+import ModelViewer from "@/components/ModelViewer";
 import { FloatingNav } from "@/components/ui/floatingNav";
 import { FaHome } from "react-icons/fa";
 
@@ -10,7 +11,10 @@ export default function Home() {
        <FloatingNav navItems={[
         {name: 'Home', link: '/', icon: <FaHome/>},
        ]} />
-        <Hero />
+         <div className="flex flex-col sm:flex-row w-full">
+          <Hero  />
+          <ModelViewer  />
+        </div>
         <Grid />
       </div>
     </main>
