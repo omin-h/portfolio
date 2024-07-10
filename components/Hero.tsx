@@ -2,6 +2,7 @@ import React from 'react'
 import { Spotlight } from './ui/spotlight'
 import { TextGenerateEffect } from './ui/text-generate-effect'
 import MagicButton from './ui/magicButton'
+import { TiArrowRightThick } from "react-icons/ti";
 
 const Hero = () => {
   return (
@@ -38,7 +39,10 @@ const Hero = () => {
           </p>
 
           <a href='#about'>
-            <MagicButton />
+            <MagicButton 
+            icon={<TiArrowRightThick />} 
+            position={"right"}
+            />
              </a>
 
           </div>
