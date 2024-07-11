@@ -13,7 +13,9 @@ export default function Home() {
        ]} />
          <div className="flex flex-col sm:flex-row w-full">
           <Hero  />
-          <ModelViewer  />
+          <div className="hidden sm:block">
+            <ModelViewer />
+          </div>
         </div>
         <Grid />
       </div>

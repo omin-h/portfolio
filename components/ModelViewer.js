@@ -22,7 +22,7 @@ const Model = () => {
 
   useFrame((_, delta) => mixer.current?.update(delta));
 
-  scene.scale.set(1, 1.1, 1);
+  scene.scale.set(1.1, 1.2, 1);
   scene.position.set(0, -1, 0);
 
   return <primitive object={scene} />;
@@ -30,7 +30,7 @@ const Model = () => {
 
 const ModelViewer = () => {
   return (
-    <div style={{ height: '700px', width : '800px', mediumwidth:'300px', marginRight: '-60px' }}>
+    <div style={{ height: '700px', width : '700px', marginRight: '-60px' }}>
     <Canvas camera={{ position: [0, 2, 5], fov: 50 }}>
       <ambientLight intensity={0.5} />
       <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />

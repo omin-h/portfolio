@@ -28,11 +28,11 @@ const Hero = () => {
           
 
           <TextGenerateEffect 
-            className='pt-[90px] mr-20 text-left text-[40px] md:text-3xl lg:text-5xl'
+            className='pt-[80px] mr-10 text-left text-[40px] md:text-3xl lg:text-5xl'
             words="Delivering comprehensive solutions with precision and passion"
             />
 
-          <p className=" left-[-2] mb-4 text-sm md:text-lg lg:text-">
+          <p className=" left-[-2] mb-4 text-sm md:text-lg lg:text-[18px] pt-4">
             Hi! I&apos;m Omin, a fullstack Developer and AI enthusiast based in Sri Lanka.
           </p>
  
