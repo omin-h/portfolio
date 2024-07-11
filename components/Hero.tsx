@@ -6,12 +6,10 @@ import { TiArrowRightThick } from "react-icons/ti";
 
 const Hero = () => {
   return (
-    <div className='pb-20 pt-36'>
+    <div>
       <div>
 
-        <Spotlight className='-top-40 -left-10 md:-left-32 md:-top-20 h-screen' fill="white"/>
-        <Spotlight className='-top-10 -left-full h-[80vh] w-[50vw] ' fill="purple"/>
-        <Spotlight className='-top28 -left80 h-[80vh] w-[50vw]' fill="blue"/>
+        <Spotlight className='top-200 h-[60vh] w-[30vw]' fill="blue"/>
         <Spotlight className='-top28 -left-40 h-[80vh] w-[50vw]' fill="white"/>
 
       </div>
@@ -23,21 +21,21 @@ const Hero = () => {
         
       </div>
 
-       <div className='flex justify-center relative my-20 z-10'>
+       <div className='flex justify-left relative my-20 z-10'>
           <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw]
-          flex flex-col items-center justify-center'>
+          flex flex-col items-left justify-center'>
             
           
 
           <TextGenerateEffect 
-            className='relative top-[-50px] text-center text-[40px] md:text-5xl lg:text-6xl'
-            words="Hello world!, I'm Omin dhsh hghfdh fdhdrhdhd hd hdf hfdh d djdg jd"
+            className='pt-[90px] mr-20 text-left text-[40px] md:text-3xl lg:text-5xl'
+            words="Delivering comprehensive solutions with precision and passion"
             />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Omin, a fullstack Developer based in Sri Lanka.
+          <p className=" left-[-2] mb-4 text-sm md:text-lg lg:text-">
+            Hi! I&apos;m Omin, a fullstack Developer and AI enthusiast based in Sri Lanka.
           </p>
-
+ 
           <a href='#about'>
             <MagicButton 
             icon={<TiArrowRightThick />} 
