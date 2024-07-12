@@ -1,4 +1,3 @@
-import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import ModelViewer from "@/components/ModelViewer";
 import { FloatingNav } from "@/components/ui/floatingNav";
@@ -25,7 +24,7 @@ export default function Home() {
           </div>
         </div>
         
-        <Grid />
+    
       </div>
     </main>
   );
