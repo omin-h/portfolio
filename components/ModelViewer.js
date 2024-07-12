@@ -28,6 +28,7 @@ const Model = () => {
   return <primitive object={scene} />;
 };
 
+
 const ModelViewer = () => {
   return (
     <div style={{ height: '700px', width : '700px', marginRight: '-60px' }}>
@@ -38,7 +39,7 @@ const ModelViewer = () => {
       <Suspense fallback={null}>
       <Model  />
       </Suspense>
-      <OrbitControls />
+      <OrbitControls enableZoom={false} />
     </Canvas>
     </div>
   );

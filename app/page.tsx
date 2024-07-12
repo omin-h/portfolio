@@ -24,6 +24,7 @@ export default function Home() {
             <ModelViewer />
           </div>
         </div>
+        
         <Grid />
       </div>
     </main>
