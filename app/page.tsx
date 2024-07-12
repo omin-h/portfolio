@@ -3,6 +3,8 @@ import ModelViewer from "@/components/ModelViewer";
 import { FloatingNav } from "@/components/ui/floatingNav";
 import { FaHome } from "react-icons/fa";
 import Projects from "@/components/RecentProjects";
+import About from "@/components/about";
+import Contact from "@/components/Contact";
 
 
 export default function Home() {
@@ -28,10 +30,18 @@ export default function Home() {
             <ModelViewer />            
           </div>
         </div>
+
+        <div id="about">
+          <About />
+        </div>
         
         <div id="projects">
           <Projects />
         </div>
+
+        <div id="contact">          
+            <Contact />
+          </div>
     
       </div>
     </main>
