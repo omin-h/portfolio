@@ -15,7 +15,7 @@ const Hero = () => {
       </div>
       
     
-       <div className='flex justify-left relative my-20 z-10'>
+       <div className='flex justify-left ml-20 relative my-20 z-10'>
           <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw]
           flex flex-col items-left justify-center'>
             
@@ -26,16 +26,17 @@ const Hero = () => {
             words="Delivering comprehensive solutions with precision and passion"
             />
 
-          <p className=" left-[-2] mb-4 text-sm md:text-lg lg:text-[23px] pt-4">
+          <p className=" left-2 mb-4 text-sm md:text-lg lg:text-[23px] pt-4">
             Hi! I&apos;m Omin, a fullstack Developer and AI enthusiast based in Sri Lanka.
           </p>
  
-          <a href='#about'>
-            <MagicButton 
+          <a href="#projects">
+          <MagicButton 
             icon={<TiArrowRightThick />} 
             position={"right"}
             />
-             </a>
+          </a>
+
 
           </div>
           
