@@ -4,6 +4,7 @@ import { FloatingNav } from "@/components/ui/floatingNav";
 import { FaHome } from "react-icons/fa";
 import Projects from "@/components/RecentProjects";
 
+
 export default function Home() {
   return (
     <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
@@ -31,7 +32,6 @@ export default function Home() {
         <div id="projects">
           <Projects />
         </div>
-        
     
       </div>
     </main>
