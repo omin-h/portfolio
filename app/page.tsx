@@ -5,6 +5,7 @@ import { FaHome } from "react-icons/fa";
 import Projects from "@/components/RecentProjects";
 import About from "@/components/about";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 
 export default function Home() {
@@ -42,6 +43,8 @@ export default function Home() {
         <div id="contact">          
             <Contact />
           </div>
+
+          <Footer />
     
       </div>
     </main>
