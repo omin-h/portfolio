@@ -13,13 +13,13 @@ const RecentProjects = () => {
         {projects.map((item) => (
           <div            
             key={item.id}
-            className="lg:min-h-[32.5rem] h-[1rem] flex items-center justify-center sm:w-96 w-[80vw]"
+            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]" 
           >
             <PinContainer
               title="GitHub"
               href={item.link}
             >
-              <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[10vh] lg:h-[27vh] mb-10">
+              <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[27vh] lg:h-[27vh] mb-10 ">
                 <img
                   src={item.img}
                   alt="cover"
