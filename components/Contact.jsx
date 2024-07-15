@@ -4,6 +4,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -62,9 +63,13 @@ const Contact = () => {
   };
 
   return (
-    <div className={`xl:mt-12 xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
-    >
 
+    
+
+
+    <div>
+      
+      
       <h1 className="heading">
         Contact{" "}
         <span className="text-purple">Me</span>
@@ -127,7 +132,7 @@ const Contact = () => {
           </button>
         </form>
       </div>
-
+      
      
     </div>
   );

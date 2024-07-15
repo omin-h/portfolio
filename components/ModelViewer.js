@@ -22,8 +22,8 @@ const Model = () => {
 
   useFrame((_, delta) => mixer.current?.update(delta));
 
-  scene.scale.set(1.1, 1.2, 1);
-  scene.position.set(0, -1, 0);
+  scene.scale.set(1.4, 1.6, 1);
+  scene.position.set(0, -1.8, 0);
 
   return <primitive object={scene} />;
 };
