@@ -3,8 +3,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
-
-
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -63,27 +61,18 @@ const Contact = () => {
   };
 
   return (
-
-    
-
-
-    <div>
-      
+    <div>      
       
       <h1 className="heading">
         Contact{" "}
         <span className="text-purple">Me</span>
       </h1>
-      <div
-        className='flex-[0.75] bg-black-100 p-8 rounded-2xl border border-gray-500 mt-2 w-[200px]'
-      >
-       
-       
+      
+      <div className='flex-[0.75] bg-black-100 p-8 rounded-2xl border border-gray-500 mt-2 w-[200px]' >              
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8' 
-        >
+          className='mt-12 flex flex-col gap-8' >
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Name</span>
             <input
