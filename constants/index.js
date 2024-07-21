@@ -1,3 +1,5 @@
+"use client";
+
 import github from '../public/git.png';
 import linkedin from '../public/li.png';
 import X from '../public/x.png';

@@ -5,7 +5,7 @@ import { FaHome } from "react-icons/fa";
 import Projects from "@/components/RecentProjects";
 import About from "@/components/about";
 import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
+import Footer from "@/components/ui/Footer";
 
 
 
