@@ -6,6 +6,7 @@ import Projects from "@/components/RecentProjects";
 import About from "@/components/about";
 import Contact from "@/components/Contact";
 import Footer from "@/components/ui/Footer";
+import Mail3D from "@/components/Mail3D";
 
 
 
@@ -41,10 +42,16 @@ export default function Home() {
           <Projects />
         </div>
      
+       <div className="flex justify-center">
         <div id="contact">          
             <Contact />
           </div>
         
+        <div className="hidden sm:block mr-20">
+            <Mail3D />            
+          </div>
+
+        </div>
          
           <Footer />
     

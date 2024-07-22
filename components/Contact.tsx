@@ -66,13 +66,13 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col items-center bg-black-900 p-8 min-h-screen">
+    <div className="flex flex-col items-right lg:w-[600px] ml-[25px] bg-black-900 p-8 min-h-screen">
       <h1 className="heading pb-10">
         Contact{" "}
         <span className="text-purple">me</span>
       </h1>
   
-      <div className="bg-gray-800 border border-gray-700 rounded-lg shadow-lg">
+      <div className="bg-zinc-950 border border-gray-700 rounded-lg shadow-lg">
         <form
           ref={formRef}
           onSubmit={handleSubmit}
