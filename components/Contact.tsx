@@ -2,6 +2,8 @@
 
 import React, { useRef, useState, ChangeEvent, FormEvent } from "react";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 interface FormState {
   name: string;
@@ -48,7 +50,7 @@ const Contact: React.FC = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          toast.success("Thank you. I will get back to you as soon as possible.");
 
           setForm({
             name: "",
@@ -60,23 +62,23 @@ const Contact: React.FC = () => {
           setLoading(false);
           console.error(error);
 
-          alert("Ahh, something went wrong. Please try again.");
+          toast.error("Ahh, something went wrong. Please try again.");
         }
       );
   };
 
   return (
-    <div className="flex flex-col items-right lg:w-[600px] ml-[25px] bg-black-900 p-8 min-h-screen">
+    <div className="flex flex-col items-right lg:w-[600px] ml-[15px] bg-black-900 p-8 min-h-screen">
       <h1 className="heading pb-10">
         Contact{" "}
         <span className="text-purple">me</span>
       </h1>
   
-      <div className="bg-zinc-950 border border-gray-700 rounded-lg shadow-lg">
+      <div className="bg-black-200 border border-gray-700 rounded-lg shadow-lg">
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className="flex flex-col gap-6"
+          className="flex flex-col gap-6 p-8"
         >
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Name</span>
@@ -117,15 +119,21 @@ const Contact: React.FC = () => {
               autoComplete="message"
             />
           </label>
-  
-          <button
-            type="submit"
-            className="bg-purple-500 py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
-          >
-            {loading ? "Sending..." : "Send"}
+
+
+          <button className="p-[3px] relative" 
+            type="submit">
+            <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
+            <div className="px-8 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
+                {loading ? "Sending..." : "Send"}
+            </div>
+
+            
           </button>
+  
         </form>
       </div>
+      <ToastContainer />
     </div>
   );
 
