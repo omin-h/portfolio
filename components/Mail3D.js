@@ -7,7 +7,7 @@ import { OrbitControls, useGLTF } from '@react-three/drei';
 import * as THREE from 'three';
 
 const Model = () => {
-  const { scene, animations } = useGLTF('/mail_icon.glb');
+  const { scene, animations } = useGLTF('/earth.glb');
   const mixer = useRef();
 
   useEffect(() => {
@@ -22,8 +22,8 @@ const Model = () => {
 
   useFrame((_, delta) => mixer.current?.update(delta));
 
-  scene.scale.set(0.6, 0.6, 1);
-  scene.position.set(0, 0, 0);
+  scene.scale.set(1.3, 1.3, 1.3);
+  scene.position.set(0, -0.1, 0);
 
   return <primitive object={scene} />;
 };
@@ -49,7 +49,7 @@ const ModelViewer = () => {
   return (
     <div style={{ height: '700px', width: '700px', marginRight: '-60px' }}>
       <Canvas camera={{ position: [1, 0, 5], fov: 50 }}>
-        <ambientLight intensity={0.5} />
+        <ambientLight intensity={1} />
         <spotLight position={[10, 20, 30]} angle={0.15} penumbra={1} />
         <pointLight position={[-10, -10, -10]} />
         <Suspense fallback={null}>

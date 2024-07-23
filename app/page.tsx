@@ -7,6 +7,7 @@ import About from "@/components/about";
 import Contact from "@/components/Contact";
 import Footer from "@/components/ui/Footer";
 import Mail3D from "@/components/Mail3D";
+import Approach from "@/components/Approach";
 
 
 
@@ -25,7 +26,9 @@ export default function Home() {
         {name: 'Home', link: '/', icon: <FaHome/>},
         {name: 'About', link: '#about'},
         {name: 'Projects', link: '#projects'},
+        {name: 'Approach', link: '#approch'},
         {name: 'Contact', link: '#contact'}
+
        ]} />
          <div className="flex flex-col sm:flex-row w-full  pb-6">
           <Hero  />
@@ -43,6 +46,9 @@ export default function Home() {
         </div>
 
      
+       <div id="approch">
+        <Approach />
+       </div>
      
        <div className="flex justify-center">
         <div id="contact">          
