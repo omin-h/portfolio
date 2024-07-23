@@ -48,7 +48,7 @@ export function WobbleCardDemo() {
       <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-pink-800 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px] justify-center items-center flex">
         <div className="max-w-sm">
           <h2 className="max-w-sm md:max-w-lg text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-            Skills/ Tools
+            Skills, Tools
           </h2>
         </div>
         <div className="flex flex-wrap sm:justify-center pt-2 gap-6">
