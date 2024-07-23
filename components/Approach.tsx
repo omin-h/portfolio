@@ -12,7 +12,7 @@ export function CanvasRevealEffectDemo() {
         <span className="text-purple">approach</span>
       </h1></div>
       <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-white dark:bg-black-100 w-full gap-4 mx-auto px-8">
-        <Card 
+        <Card
             title="Planning and Design" 
             icon={<Image src="/first.png" alt="Planning and Design Icon" width={100} height={100} />}
             des="I start by collaborating with stakeholders to understand project requirements and define the scope. Then, I design the system architecture, selecting the tech stack and planning the database, API, and data flow. Finally, I create wireframes and prototypes to ensure a great user experience.">
@@ -67,7 +67,7 @@ const Card = ({
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="border border-black/[0.2] group/canvas-card flex items-center justify-center
+      className=" border border-black/[0.2] group/canvas-card flex items-center justify-center
        dark:border-white/[0.2] max-w-sm w-full mx-auto p-4 relative lg:h-[35rem] rounded-3xl"
       style={{
         background: "rgb(4,7,29)",
@@ -120,27 +120,6 @@ const Card = ({
 };
 
 
-const AceternityIcon = () => {
-  return (
-    <svg
-      width="66"
-      height="65"
-      viewBox="0 0 66 65"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className="h-10 w-10 text-black dark:text-white group-hover/canvas-card:text-white "
-    >
-      <path
-        d="M8 8.05571C8 8.05571 54.9009 18.1782 57.8687 30.062C60.8365 41.9458 9.05432 57.4696 9.05432 57.4696"
-        stroke="currentColor"
-        strokeWidth="15"
-        strokeMiterlimit="3.86874"
-        strokeLinecap="round"
-        style={{ mixBlendMode: "darken" }}
-      />
-    </svg>
-  );
-};
 
 export const Icon = ({ className, ...rest }: any) => {
   return (
