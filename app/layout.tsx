@@ -8,6 +8,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Omin's portfolio",
   description: "Modern portfolio for Omin",
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({
