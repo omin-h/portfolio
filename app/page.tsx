@@ -41,6 +41,8 @@ export default function Home() {
         <div id="projects">
           <Projects />
         </div>
+
+     
      
        <div className="flex justify-center">
         <div id="contact">          

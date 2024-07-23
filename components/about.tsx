@@ -10,28 +10,30 @@ export function WobbleCardDemo() {
       
 
       <WobbleCard containerClassName="col-span-1 min-h-[300px] relative">
+       
         <Image
-          src="/world.png"
+          src="/dev.png"
           width={450}
           height={300}
           alt="linear demo image"
-          className="absolute top-[60px] -right-10 md:-right-[40%] lg:-right-[0%] object-contain rounded-2xl opacity-40"
+          className="absolute top-[60px] -right-10 md:-right-[40%] lg:-right-[0%] object-contain rounded-2xl opacity-60"
         />
-        <h2 className="absolute top-30 left-10 max-w-80 text-left text-balance text-3xl font-semibold tracking-[-0.015em] text-white">
-          I'm flexible with communication across different time zones.
+         <h2 className="absolute top-30 left-10 max-w-80 text-left text-balance text-3xl font-semibold tracking-[-0.015em]">
+          I am a freelance full-stack developer
         </h2>
+        
       </WobbleCard>
 
       <WobbleCard containerClassName="col-span-1 min-h-[300px] relative">
         <Image
-          src="/world.png"
+          src="/brain.png"
           width={450}
           height={300}
           alt="linear demo image"
-          className="absolute top-[60px] -right-10 md:-right-[40%] lg:-right-[0%] object-contain rounded-2xl opacity-40"
+          className="absolute top-[60px] -right-10 md:-right-[40%] lg:-right-[0%] object-contain rounded-2xl opacity-90"
         />
-        <h2 className="absolute top-30 left-10 max-w-80 text-left text-balance text-3xl font-semibold tracking-[-0.015em] text-white">
-          I'm flexible with communication across different time zones.
+        <h2 className="absolute top-30 left-10 max-w-80 text-left text-balance text-3xl tracking-[-0.015em] text-white">
+          Currently learning, <strong>supervised machine learning</strong>
         </h2>
       </WobbleCard>
 
