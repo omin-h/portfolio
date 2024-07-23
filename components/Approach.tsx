@@ -14,8 +14,8 @@ export function CanvasRevealEffectDemo() {
       <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-white dark:bg-black-100 w-full gap-4 mx-auto px-8">
         <Card 
             title="Planning and Design" 
-            icon={<Image src="/first.png" alt="Planning and Design Icon" width={80} height={80} />}
-            des="wkej">
+            icon={<Image src="/first.png" alt="Planning and Design Icon" width={100} height={100} />}
+            des="I start by collaborating with stakeholders to understand project requirements and define the scope. Then, I design the system architecture, selecting the tech stack and planning the database, API, and data flow. Finally, I create wireframes and prototypes to ensure a great user experience.">
           <CanvasRevealEffect
             animationSpeed={5.1}
             containerClassName="bg-emerald-900"
@@ -23,8 +23,8 @@ export function CanvasRevealEffectDemo() {
         </Card>
         <Card 
             title="Development" 
-            icon={<Image src="/second.png" alt="Development Icon" width={80} height={80} />}
-            des="wef">
+            icon={<Image src="/second.png" alt="Development Icon" width={100} height={100} />}
+            des="I develop the front-end using modern frameworks to create a responsive and interactive user interface. On the back-end, I set up the server, develop APIs, and implement business logic. I also manage the database, ensuring efficient data handling and security.">
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-black"
@@ -38,8 +38,8 @@ export function CanvasRevealEffectDemo() {
         </Card>
         <Card 
             title="Testing and Deployment" 
-            icon={<Image src="/third.png" alt="Testing and Deployment Icon" width={80} height={80} />}
-            des="">
+            icon={<Image src="/third.png" alt="Testing and Deployment Icon" width={100} height={100} />}
+            des="I test the app thoroughly to make sure everything works well. Then, I deploy it using automated tools and a hosting service. After it's live, I keep an eye on it, fixing any issues and updating it as needed.">
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-sky-600"
