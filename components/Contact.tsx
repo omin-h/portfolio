@@ -68,7 +68,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col items-right lg:w-[600px] ml-[15px] bg-black-900 p-8 min-h-screen pb-16">
+    <div className="flex flex-col items-right lg:w-[600px] bg-black-900 p-8 min-h-screen pb-16">
       <h1 className="heading pb-16 pt-10">
         Contact{" "}
         <span className="text-purple">me</span>

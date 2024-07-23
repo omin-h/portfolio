@@ -27,7 +27,7 @@ const Hero = () => {
             />
 
           <p className=" left-2 mb-4 text-sm md:text-lg lg:text-[23px] pt-4">
-            Hi! I&apos;m Omin, a fullstack Developer and AI enthusiast based in Sri Lanka.
+            Hi! I&apos;m <strong>Omin Hemapriya</strong>, a fullstack Developer and AI enthusiast based in Sri Lanka.
           </p>
  
           <a href="#projects">
