@@ -9,6 +9,7 @@ import * as THREE from 'three';
 const Model = () => {
   const { scene, animations } = useGLTF('/earth.glb');
   const mixer = useRef();
+  const modelRef = useRef();
 
   useEffect(() => {
     if (animations.length) {
@@ -20,12 +21,17 @@ const Model = () => {
     return () => mixer.current?.stopAllAction();
   }, [animations, scene]);
 
-  useFrame((_, delta) => mixer.current?.update(delta));
+  useFrame((_, delta) => {
+    mixer.current?.update(delta);
+    if (modelRef.current) {
+      modelRef.current.rotation.y += 0.004; // Adjust the speed of the rotation as needed
+    }
+  });
 
   scene.scale.set(1.3, 1.3, 1.3);
-  scene.position.set(0, -0.1, 0);
+  scene.position.set(0.2, -0.8, 0);
 
-  return <primitive object={scene} />;
+  return <primitive ref={modelRef} object={scene} />;
 };
 
 const ModelViewer = () => {
@@ -35,7 +41,7 @@ const ModelViewer = () => {
     const handleScroll = () => {
       if (modelRef.current) {
         const scrollPosition = window.scrollY || document.documentElement.scrollTop;
-        modelRef.current.position.x = scrollPosition * 0.02; // Adjust the multiplier to control the movement speed
+        modelRef.current.position.x = scrollPosition;
       }
     };
 
@@ -49,11 +55,11 @@ const ModelViewer = () => {
   return (
     <div style={{ height: '700px', width: '700px', marginRight: '-60px' }}>
       <Canvas camera={{ position: [1, 0, 5], fov: 50 }}>
-        <ambientLight intensity={1} />
+        <ambientLight intensity={1.2} />
         <spotLight position={[10, 20, 30]} angle={0.15} penumbra={1} />
         <pointLight position={[-10, -10, -10]} />
         <Suspense fallback={null}>
-          <Model ref={modelRef} />
+          <Model />
         </Suspense>
         <OrbitControls enableZoom={false} />
       </Canvas>

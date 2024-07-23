@@ -33,7 +33,7 @@ const ModelViewer = () => {
   return (
     <div style={{ height: '700px', width : '700px', marginRight: '-60px' }}>
     <Canvas camera={{ position: [0, 2, 5], fov: 50 }}>
-      <ambientLight intensity={0.5} />
+      <ambientLight intensity={0.7} />
       <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
       <pointLight position={[-10, -10, -10]} />
       <Suspense fallback={null}>
