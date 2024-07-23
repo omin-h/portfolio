@@ -1,4 +1,5 @@
 "use client";
+import Image from 'next/image';
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
 
@@ -19,11 +20,12 @@ const RecentProjects = () => {
               title="GitHub"
               href={item.link}
             >
-              <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[27vh] lg:h-[27vh] mb-10 ">
-                <img
+              <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[27vh] lg:h-[27vh] mb-10">
+                <Image
                   src={item.img}
                   alt="cover"
-                  className="z-10 absolute bottom-0 rounded-xl"
+                  fill
+                  className="z-10 absolute bottom-0 rounded-xl object-cover"
                 />
               </div>
 
@@ -51,7 +53,7 @@ const RecentProjects = () => {
                         transform: `translateX(-${5 * index + 2}px)`,
                       }}
                     >
-                      <img src={icon} alt="icon5" className="p-2" />
+                      <Image src={icon} alt="icon" width={24} height={24} />
                     </div>
                   ))}
                 </div>
