@@ -30,7 +30,7 @@ export default function Home() {
         {name: 'Contact', link: '#contact'}
 
        ]} />
-         <div className="flex flex-col sm:flex-row w-full  pb-6">
+         <div className="flex flex-col justify-center sm:flex-row w-full  pb-6">
           <Hero  />
           <div className="hidden sm:block mr-20">
             <ModelViewer />            
