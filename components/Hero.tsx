@@ -15,7 +15,7 @@ const Hero = () => {
       </div>
       
     
-       <div className='flex justify-left ml-20 relative my-20 z-10'>
+       <div className='flex justify-left lg:ml-20 relative my-20 z-10'>
           <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw]
           flex flex-col items-left justify-center'>
             
