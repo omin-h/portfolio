@@ -71,23 +71,29 @@ export function WobbleCardDemo() {
           <div className="flex flex-wrap sm:justify-center pt-2 gap-6">
             <Image src="/html.png" width={50} height={50} alt="html" />
             <Image src="/css.png" width={50} height={50} alt="css" />
-            <Image src="/react.png" width={50} height={50} alt="react" />
-            <Image src="/node.png" width={50} height={50} alt="node" />
-            <Image src="/spring.png" width={50} height={50} alt="spring" />
-            <Image src="/mongo.png" width={50} height={50} alt="mongo" />
-            <Image src="/python.png" width={50} height={50} alt="python" />
-            <Image src="/java.png" width={50} height={50} alt="java" />
             <Image src="/js.png" width={50} height={50} alt="js" />
+            <Image src="/react.png" width={50} height={50} alt="react" />            
+            <Image src="/flutter.png" width={50} height={50} alt="flutter" />
             <Image src="/tailwind.png" width={50} height={50} alt="tailwind" />
-            <Image src="/php.png" width={50} height={50} alt="php" />
-            <Image src="/next.png" width={50} height={50} alt="next" />
+            <Image src="/node.png" width={50} height={50} alt="node" />
+            <Image src="/Express.png" width={50} height={50} alt="express" />
+            <Image src="/spring.png" width={50} height={50} alt="spring" />
+             <Image src="/Flask.png" width={50} height={50} alt="flask" />
+            <Image src="/mongo.png" width={50} height={50} alt="mongo" />
+            <Image src="/firebase.png" width={50} height={50} alt="firebase" />
+            <Image src="/google_cloud.png" width={50} height={50} alt="google cloud" />
+            <Image src="/python.png" width={50} height={50} alt="python" />
+            <Image src="/java.png" width={50} height={50} alt="java" />  
+            <Image src="/Dart.png" width={50} height={50} alt="dart" />    
             <Image src="/sql.png" width={50} height={50} alt="sql" />
             <Image src="/rest.png" width={50} height={50} alt="rest" />
             <Image src="/github.png" width={50} height={50} alt="github" />
-            <Image src="/c.png" width={50} height={50} alt="c" />
-            <Image src="/c++.png" width={50} height={50} alt="c++" />
+            <Image src="/docker.png" width={50} height={50} alt="docker" />
             <Image src="/linux.png" width={50} height={50} alt="linux" />
-            <Image src="/framer.png" width={50} height={50} alt="framer" />
+            <Image src="/figma.png" width={50} height={50} alt="figma" />          
+                     
+            
+            
           </div>
         </div>
       </WobbleCard>

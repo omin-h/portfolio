@@ -21,7 +21,7 @@ const ProfileSection = () => {
               </div>
               <span className="text-gray-300 block mb-2">Sri Lanka Institute of Information Technology | 02/2022 - present</span>
               <div className="w-full bg-gray-700 rounded-full h-2.5 glassy-bar">
-                <div className="bg-pink-400 h-2.5 rounded-full transition-all duration-700" style={{ width: "60%" }}></div>
+                <div className="bg-pink-400 h-2.5 rounded-full transition-all duration-700" style={{ width: "87.5%" }}></div>
               </div>
             </li>
             <li>
@@ -40,7 +40,7 @@ const ProfileSection = () => {
       <style jsx>{`
         .glassy-gradient {
           background: linear-gradient(135deg, rgba(40,40,50,0.7) 0%, rgba(80,80,120,0.4) 100%);
-          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+         
         }
         .glassy-bar {
           background: linear-gradient(90deg, rgba(80,80,120,0.3) 0%, rgba(40,40,50,0.7) 100%);
