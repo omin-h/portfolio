@@ -25,7 +25,7 @@ Designed a high-performance Flutter-based frontend, optimized for release on the
 Tracked progress toward user-defined goals using NLP techniques with spaCy for semantic similarity and FuzzyWuzzy for fuzzy matching from the generated diary entry.
 Designed a Flask backend with secure Google sign-in and CI/CD pipelines for streamlined deployment.`,
     img: "/bb.jpg",
-    link: "#",
+    link: "https://gitlab.com/r25-005/LifeNova",
     iconLists: [
       "/flutter.png",
       "/Dart.png",
