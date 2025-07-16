@@ -8,6 +8,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/ui/Footer";
 import Mail3D from "@/components/Mail3D";
 import Approach from "@/components/Approach";
+import ProfileSection from "@/components/ProfileSection";
 
 
 
@@ -24,7 +25,7 @@ export default function Home() {
 
        <FloatingNav navItems={[
         {name: 'Home', link: '/', icon: <FaHome/>},
-        {name: 'About', link: '#about'},
+        {name: 'About Me', link: '#about'},
         {name: 'Projects', link: '#projects'},
         {name: 'Approach', link: '#approch'},
         {name: 'Contact', link: '#contact'}
@@ -38,8 +39,10 @@ export default function Home() {
         </div>
 
         <div id="about">
-          <About />
-        </div>
+        <ProfileSection />    
+        </div>    
+        <About />
+        
         
         <div id="projects">
           <Projects />
@@ -49,7 +52,7 @@ export default function Home() {
        <div id="approch">
         <Approach />
        </div>
-     
+       
        <div className="flex justify-center">
         <div id="contact">          
             <Contact />
