@@ -3,8 +3,6 @@ import Image from 'next/image';
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
 
-const CARD_HEIGHT = "h-[590px]"; // You can adjust this value as needed
-
 const RecentProjects = () => {
   return (
     <div className="py-20">
@@ -16,23 +14,21 @@ const RecentProjects = () => {
         {projects.map((item) => (
           <div
             key={item.id}
-            className={`flex items-stretch justify-center sm:w-96 w-full h-auto sm:h-[590px] mt-10`}
+            className="flex items-stretch justify-center w-full sm:w-96 h-auto sm:h-[590px] mt-10"
           >
             <PinContainer
               title="GitHub"
               href={item.link}
-              className={`flex flex-col w-full ${CARD_HEIGHT}`}
+              className="flex flex-col w-full h-auto sm:h-[590px]"
             >
-              <div className="relative flex items-center justify-center sm:w-96 w-full overflow-hidden h-48 mb-10">
+              <div className="relative flex items-center justify-center w-full sm:w-96 overflow-hidden h-40 sm:h-48 mb-10">
                 <Image
                   src={item.img}
                   alt="cover"
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-xl"
+                  fill
+                  className="rounded-xl object-cover"
                 />
               </div>
-
               <div className="flex flex-col flex-grow justify-start">
                 <h1 className="font-bold lg:text-2xl md:text-xl text-base">
                   {item.title}
@@ -47,7 +43,6 @@ const RecentProjects = () => {
                   {item.des}
                 </p>
               </div>
-
               <div className="flex items-center justify-between mt-7 mb-3">
                 <div className="flex items-center">
                   {item.iconLists.map((icon, index) => (
