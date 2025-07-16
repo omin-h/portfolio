@@ -1,14 +1,13 @@
 import Hero from "@/components/Hero";
 import ModelViewer from "@/components/ModelViewer";
 import { FloatingNav } from "@/components/ui/floatingNav";
-import { FaHome } from "react-icons/fa";
-import Projects from "@/components/RecentProjects";
 import About from "@/components/about";
 import Contact from "@/components/Contact";
 import Footer from "@/components/ui/Footer";
 import Mail3D from "@/components/Mail3D";
 import Approach from "@/components/Approach";
 import ProfileSection from "@/components/ProfileSection";
+import ResponsiveProjects from "@/components/ResponsiveProjects";
 
 
 
@@ -45,7 +44,7 @@ export default function Home() {
         
         
         <div id="projects">
-          <Projects />
+          <ResponsiveProjects />
         </div>
 
      

@@ -5,7 +5,10 @@ const ProfileSection = () => {
   return (
     <section className="w-full flex flex-col items-center justify-center py-12 px-2 sm:px-4 md:px-0">
       <div className="max-w-7xl mx-auto w-full text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">About Me</h2>
+        <h2 className="heading pb-16 pt-10">
+        About{" "}
+        <span className="text-purple">Me</span>
+      </h2>
         <p className="text-base md:text-lg text-gray-200 mb-8 leading-relaxed">
           An information technology undergraduate with hands-on experience across the full software development lifecycle. Skilled in data structures, algorithms, and database concepts, with a strong foundation in cloud-based environments. I am eager to contribute creative ideas through an internship focused on impactful, enterprise-grade projects, while learning from experienced professionals in software engineering.
         </p>

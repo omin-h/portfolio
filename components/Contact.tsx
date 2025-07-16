@@ -70,10 +70,10 @@ const Contact: React.FC = () => {
 
   return (
     <div className="flex flex-col items-right lg:w-[600px] bg-black-900 p-8 min-h-screen pb-16">
-      <h1 className="heading pb-16 pt-10">
+      <h2 className="heading pb-16 pt-10">
         Contact{" "}
-        <span className="text-purple">me</span>
-      </h1>
+        <span className="text-purple">Me</span>
+      </h2>
   
       <div className="bg-black-200 border border-gray-700 rounded-lg shadow-lg">
         <form

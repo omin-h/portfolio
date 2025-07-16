@@ -49,7 +49,7 @@ Designed a Flask backend with secure Google sign-in and CI/CD pipelines for stre
     des: "A fitness-centric social media platform for enthusiasts to share workouts, recipes, and progress. Users can post media, share plans, manage profiles, interact with others, and receive notifications for likes and comments",
     img: "/dd3.png",
     iconLists: ["/re.svg", "/mn.svg", "/jv.png", "/sp.png", "/ra.png", "/gt.webp"],
-    link: "https://github.com/PAF-IT3030/paf-assignment-2024-reg_we_17_team",
+    link: "#",
   },
   {
     id: 5,
