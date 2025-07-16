@@ -4,6 +4,7 @@ import React, { useRef, useState, ChangeEvent, FormEvent } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import MagicButton from './ui/magicButton'
 
 interface FormState {
   name: string;
@@ -89,7 +90,7 @@ const Contact: React.FC = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="What's your name?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              className="bg-gray-800 py-4 px-6 placeholder:text-gray-400 text-white rounded-lg outline-none border border-gray-600 font-medium focus:border-purple focus:ring-2 focus:ring-purple transition"
               autoComplete="name"
             />
           </label>
@@ -102,7 +103,7 @@ const Contact: React.FC = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="What's your Email?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              className="bg-gray-800 py-4 px-6 placeholder:text-gray-400 text-white rounded-lg outline-none border border-gray-600 font-medium focus:border-purple focus:ring-2 focus:ring-purple transition"
               autoComplete="email"
             />
           </label>
@@ -115,18 +116,23 @@ const Contact: React.FC = () => {
               value={form.message}
               onChange={handleChange}
               placeholder="What do you want to say?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              className="bg-gray-800 py-4 px-6 placeholder:text-gray-400 text-white rounded-lg outline-none border border-gray-600 font-medium focus:border-purple focus:ring-2 focus:ring-purple transition"
               autoComplete="message"
             />
           </label>
 
-          <button className="p-[3px] relative" 
-            type="submit">
-            <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-blue-100 rounded-lg" />
-            <div className="px-8 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
-                {loading ? "Sending..." : "Send"}
-            </div>            
-          </button>
+          <MagicButton
+            type="submit"
+            position="right"
+            icon={null}
+            handleClick={undefined}
+            className="w-full self-center"
+            disabled={loading}
+          >
+            <span className="w-full block px-8 py-2 text-white font-semibold text-lg text-center">
+              {loading ? "Sending..." : "Send"}
+            </span>
+          </MagicButton>
   
         </form>
       </div>

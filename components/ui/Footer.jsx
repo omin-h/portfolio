@@ -10,7 +10,7 @@ const Footer = () => {
       <hr className='border-slate-200' />
       <div className='footer-container flex justify-between items-center pb-4'>
         <p className="">
-          © 2024 <strong>Omin Hemapriya</strong>. All rights reserved.
+          © 2025 <strong>Omin Hemapriya</strong>. All rights reserved.
         </p>
 
         <div className="flex gap-5 pt-2 mb-4">
@@ -22,7 +22,7 @@ const Footer = () => {
             <IoLogoLinkedin size={30} />
           </a>
 
-          <a href='https://x.com/ominduln' aria-label="X">
+          <a href='https://x.com/om1_nn' aria-label="X">
             <FaSquareXTwitter size={30} />
           </a>
         </div>
