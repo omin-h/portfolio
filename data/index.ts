@@ -6,7 +6,7 @@ export const projects = [
 Integrated Google account authentication and a subscription-based model for premium features.
 Developed a scalable ExpressJS backend, containerized with Docker and deployed on Google Cloud Run, with automated CI/CD using GitHub Actions.
 Designed a high-performance Flutter-based frontend, optimized for release on the Google Play Store, and integrated Firebase Cloud Messaging for real-time push notifications.`,
-    img: "/aa.jpeg",
+    img: "/aa.png",
     link: "#",
     iconLists: [
       "/flutter.png",
