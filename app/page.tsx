@@ -24,8 +24,8 @@ export default function Home() {
       </div>
 
        <FloatingNav navItems={[
-        {name: 'Home', link: '/', icon: <FaHome/>},
-        {name: 'About Me', link: '#about'},
+        {name: 'Home', link: '/'},
+        {name: 'Profile', link: '#about'},
         {name: 'Projects', link: '#projects'},
         {name: 'Approach', link: '#approch'},
         {name: 'Contact', link: '#contact'}

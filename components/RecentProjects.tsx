@@ -16,19 +16,20 @@ const RecentProjects = () => {
         {projects.map((item) => (
           <div
             key={item.id}
-            className={`flex items-stretch justify-center sm:w-96 w-[90vw] h-auto sm:h-[590px]`}
+            className={`flex items-stretch justify-center sm:w-96 w-full h-auto sm:h-[590px] mt-10`}
           >
             <PinContainer
               title="GitHub"
               href={item.link}
               className={`flex flex-col w-full ${CARD_HEIGHT}`}
             >
-              <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[27vh] lg:h-[27vh] mb-10">
+              <div className="relative flex items-center justify-center sm:w-96 w-full overflow-hidden h-48 mb-10">
                 <Image
                   src={item.img}
                   alt="cover"
-                  fill
-                  className="z-10 absolute bottom-0 rounded-xl object-cover"
+                  layout="fill"
+                  objectFit="cover"
+                  className="rounded-xl"
                 />
               </div>
 
